@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "*",
+    origin: "https://job-match-fe-omega.vercel.app",
     credentials: true,
   }),
 );
