@@ -1,6 +1,6 @@
 // prisma/seed.ts
 
-import { prisma } from "../src/db";
+import { prisma } from "./db";
 
 async function main() {
   await prisma.job.createMany({

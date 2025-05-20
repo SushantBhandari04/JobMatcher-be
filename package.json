@@ -9,7 +9,7 @@
     "dev": "npm run build && npm run start"
   },
   "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "ts-node src/seed.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,9 +17,13 @@
   "type": "commonjs",
   "dependencies": {
     "@prisma/client": "^6.8.2",
+    "@types/bcrypt": "^5.0.2",
     "@types/express": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^22.15.19",
+    "bcrypt": "^6.0.0",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "prisma": "^6.8.2",
     "typescript": "^5.8.3"
   },
