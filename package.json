@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc -b",
-    "dev": "npm run build && npm run start"
+    "dev": "npm run build && npm run start",
+    "postinstall": "prisma generate"
   },
   "prisma": {
     "seed": "ts-node src/seed.ts"
