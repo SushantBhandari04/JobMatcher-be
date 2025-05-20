@@ -17,16 +17,19 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@pinecone-database/pinecone": "^6.0.1",
     "@prisma/client": "^6.8.2",
     "@types/bcrypt": "^5.0.2",
     "@types/express": "^5.0.2",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^22.15.19",
     "bcrypt": "^6.0.0",
+    "cohere-ai": "^7.17.1",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "prisma": "^6.8.2",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "zod": "^3.25.7"
   },
   "devDependencies": {
     "ts-node": "^10.9.2"
