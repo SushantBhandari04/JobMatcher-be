@@ -7,8 +7,17 @@ import { getEmbedding } from "./cohere";
 import { jobIndex } from "./pinecone";
 import { auth } from "./auth";
 import { z } from "zod";
+import cors from "cors";
+
 const app = express();
 app.use(express.json());
+
+app.use(
+  cors({
+    origin: "*",
+    credentials: true,
+  }),
+);
 
 declare global {
   namespace Express {
