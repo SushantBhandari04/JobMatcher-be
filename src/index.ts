@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "https://job-match-fe-omega.vercel.app",
+    origin: ["https://job-match-fe-omega.vercel.app", "http://localhost:3001"],
     credentials: true,
   }),
 );
@@ -245,9 +245,8 @@ app.get('/profile', auth, async (req, res) => {
             return
         }
 
-        console.log('Profile fetched:', profile);
 
-        res.json(profile);
+        res.status(200).json({profile});
     } catch (error) {
         console.error('Error fetching profile:', error);
         res.status(500).json({ error: 'Internal server error' });
